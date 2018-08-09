@@ -7,8 +7,11 @@ bodyclass:
 
 {% extends "layouts/layout.html" %}
 
+{% block header %}
+  {% include "components/header/header.html" %}
+{% endblock %}
+
 {% block content %}
-  { % include "components/start/start.html" % }
   Слайдер
   Расписание занятий
   Приемущества

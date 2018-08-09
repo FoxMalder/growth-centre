@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Futura_Book';
+  src: url('../fonts/Futura/Futura_Book-Bold-Italic.eot');
+  src: url('../fonts/Futura/Futura_Book-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura/Futura_Book-Bold-Italic.woff2') format('woff2'),
+    url('../fonts/Futura/Futura_Book-Bold-Italic.woff') format('woff'),
+    url('../fonts/Futura/Futura_Book-Bold-Italic.ttf') format('truetype'),
+    url('../fonts/Futura/Futura_Book-Bold-Italic.svg#Futura_Book-Bold-Italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura_Book';
+  src: url('../fonts/Futura/Futura_Book-Bold.eot');
+  src: url('../fonts/Futura/Futura_Book-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura/Futura_Book-Bold.woff2') format('woff2'),
+    url('../fonts/Futura/Futura_Book-Bold.woff') format('woff'),
+    url('../fonts/Futura/Futura_Book-Bold.ttf') format('truetype'),
+    url('../fonts/Futura/Futura_Book-Bold.svg#Futura_Book-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url('../fonts/Futura/FuturaDemiC.eot');
+  src: url('../fonts/Futura/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura/FuturaDemiC.woff2') format('woff2'),
+    url('../fonts/Futura/FuturaDemiC.woff') format('woff'),
+    url('../fonts/Futura/FuturaDemiC.ttf') format('truetype'),
+    url('../fonts/Futura/FuturaDemiC.svg#FuturaDemiC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
