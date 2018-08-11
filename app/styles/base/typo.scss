@@ -89,10 +89,13 @@ h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
 
 p {
-  margin: 0 0 ($line-height-computed / 2);
-  font-size: 14px;
+  color: #7a7f8b;
+  font-family: 'FuturaDemiC';
+  font-size: 17px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 24px;
+
+  &:last-child { margin-bottom: 0; }
 }
 
 // Отступы
@@ -116,4 +119,17 @@ code {
 
 .box-headline {
   text-align: center;
+}
+
+.box-actions {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+mark {
+  background-color: #fedf11;
+  color: inherit;
+  padding: 1px 2px;
 }

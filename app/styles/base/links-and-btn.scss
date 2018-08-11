@@ -31,3 +31,35 @@ a {
     color: $link-active-color;
   }
 }
+
+
+button[disabled=disabled],
+button:disabled,
+.button:disabled,
+.button.disabled {
+  cursor: not-allowed;
+  //pointer-events: none;
+  color: rgb(173, 177, 185);
+  background-color: rgb(247, 247, 248);
+  border-color: rgb(214, 218, 221);
+}
+
+.button {
+  background-color: #fedf11;
+  border: 1px solid #fedf11;
+  border-radius: 5px;
+  padding: 15px 35px 15px 35px;
+  color: #1c1024;
+  font-family: 'FuturaDemiC';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  transition: all .3s ease;
+  /* overflow: hidden; */
+}
