@@ -2,6 +2,7 @@
   background-color: #fff;
   padding-top: 50px;
   padding-bottom: 55px;
+  font-family: 'FuturaDemiC';
 
   &-list {
     padding-top: 50px;
@@ -9,7 +10,7 @@
   }
 
   &_photo {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     min-height: 260px;
     display: flex;
     flex-direction: column;
@@ -28,5 +29,32 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+  }
+
+  &_position {
+    color: #633e7a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &_name {
+    color: #1c1024;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &_experience {
+    text-align: center;
+    padding: 5px 20px 0 20px;
+    color: #9499a3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-top: 1px solid #ccced4;
   }
 }
