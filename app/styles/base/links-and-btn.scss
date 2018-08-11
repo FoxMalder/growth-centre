@@ -62,4 +62,10 @@ button:disabled,
   position: relative;
   transition: all .3s ease;
   /* overflow: hidden; */
+
+  &-outline {
+    background-color: transparent;
+    border-color: #633e7a;
+    color: #633e7a;
+  }
 }
