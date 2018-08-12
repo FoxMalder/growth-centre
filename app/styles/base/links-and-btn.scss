@@ -11,7 +11,7 @@ a {
 
   &:hover,
   &.hover {
-    color: $link-hover-color;
+    color: #633e7a;
     transition: .2s ease;
   }
 
@@ -28,10 +28,9 @@ a {
 
   &:active,
   &.active {
-    color: $link-active-color;
+    color: #633e7a;
   }
 }
-
 
 button[disabled=disabled],
 button:disabled,
