@@ -103,7 +103,7 @@
         position: absolute;
         content: '';
         @include size(51px);
-        background-image: resolve('assets/images/slider-left-gray.png');
+        background-image: inline('./assets/images/slider-left-gray.png');
       }
 
       &:hover {
@@ -132,7 +132,7 @@
         position: absolute;
         content: '';
         @include size(51px);
-        background-image: resolve('assets/images/slider-right-gray.png');
+        background-image: inline('./assets/images/slider-right-gray.png');
       }
 
       &:hover {

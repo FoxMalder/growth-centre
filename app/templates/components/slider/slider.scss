@@ -166,7 +166,7 @@
         position: absolute;
         content: '';
         @include size(50px);
-        background-image: resolve('assets/images/slider-left-white.png');
+        background-image: inline('./assets/images/slider-left-white.png');
       }
 
       &:hover {
@@ -195,7 +195,7 @@
         position: absolute;
         content: '';
         @include size(50px);
-        background-image: resolve('assets/images/slider-right-white.png');
+        background-image: inline('./assets/images/slider-right-white.png');
       }
 
       &:hover {
