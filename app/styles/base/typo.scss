@@ -120,6 +120,10 @@ code {
 
 .box-headline {
   text-align: center;
+
+  &.text-left {
+    text-align: left;
+  }
 }
 
 .box-actions {
@@ -127,10 +131,47 @@ code {
   align-items: center;
   align-content: center;
   justify-content: center;
+
+  &.right {
+    justify-content: flex-end;
+  }
 }
 
 mark {
   background-color: #fedf11;
   color: inherit;
   padding: 1px 2px;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.float-left { float: left; }
+.float-right { float: right; }
+
+.text {
+  padding-bottom: 30px;
+
+  h3, .h3 {
+    color: #1c1024;
+    font-family: 'FuturaDemiC';
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 600;
+    color: #7a7f8b;
+  }
+
+  .box-actions {
+    padding-top: 15px;
+  }
+
+  .img-in-text {
+    padding-right: 30px;
+  }
 }
