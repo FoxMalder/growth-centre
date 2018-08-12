@@ -42,6 +42,19 @@
       margin-bottom: 20px;
     }
   }
+
+  &_social {
+    text-align: right;
+
+    .footer-menu-header {
+      margin-bottom: 20px;
+    }
+
+    .social-box {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 
 .logo-link-footer {
@@ -124,6 +137,7 @@
 
 .contacts_address {
   margin-top: 20px;
+  font-style: normal;
 
   &_info {
     color: #1c1024;
@@ -148,7 +162,9 @@
   justify-content: flex-end;
 
   &_icon {
-    margin-right: 5px;
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
   }
 }
 
@@ -161,5 +177,99 @@
 
   &:hover {
     color: darken(#633e7a, 15%);
+  }
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &-box {
+    position: relative;
+  }
+
+  &_item {
+    vertical-align: middle;
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_link {
+    overflow: hidden;
+    text-indent: -9999px;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #393c40;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border-bottom: 0;
+
+    &--vk {
+      background-color: #32506d;
+
+      span {
+        display: inline-block;
+        @include size(17px, 10px);
+        background-image: svg-load('social/vk.svg', fill=#fff);
+      }
+
+      &:hover {
+        background-color: darken(#32506d, 10%);
+      }
+    }
+
+    &--ok {
+      background-color: #e67329;
+
+      span {
+        display: inline-block;
+        @include size(8.59px, 16.22px);
+        background-image: svg-load('social/ok.svg', fill=#fff);
+      }
+
+      &:hover {
+        background-color: darken(#e67329, 10%);
+      }
+    }
+
+    &--facebook {
+      background-color: #3b5998;
+
+      span {
+        display: inline-block;
+        @include size(8px, 16px);
+        background-image: svg-load('social/fb.svg', fill=#fff);
+      }
+
+      &:hover {
+        background-color: darken(#3b5998, 10%);
+      }
+    }
+
+    &--twitter {
+      background-color: #00aced;
+
+      span {
+        display: inline-block;
+        @include size(16px, 13px);
+        background-image: svg-load('social/twi.svg', fill=#fff);
+      }
+
+      &:hover {
+        background-color: darken(#00aced, 10%);
+      }
+    }
   }
 }
