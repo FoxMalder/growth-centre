@@ -8,8 +8,8 @@
 
   &_box  {
     display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     justify-content: space-between;
   }
 
@@ -29,6 +29,15 @@
   &_address {
     margin-top: 20px;
     min-width: 260px;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+
+    .search {
+      margin-top: auto;
+      padding-right: 20px;
+    }
   }
 
   &_contact {
@@ -53,8 +62,8 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
   }
 

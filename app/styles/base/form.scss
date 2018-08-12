@@ -104,7 +104,7 @@ textarea.form-control {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #c8c8c8;
-    padding: 10px 90px 10px 0;
+    padding: 10px 55px 10px 2px;
   }
 
   .button-go {
@@ -124,6 +124,49 @@ textarea.form-control {
     border-color: transparent;
 
     &_text {
+      margin-right: 5px;
+    }
+  }
+}
+
+.search-form {
+  margin-bottom: 0;
+
+  .form-group {
+    position: relative;
+  }
+
+  .form-control {
+    color: #cbadd7;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cbadd7;
+    padding: 10px 25px 10px 2px;
+
+    &::placeholder {
+      color: #cbadd7;
+    }
+  }
+
+  .button-go {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  	transform: translateY(-50%);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #1c1024;
+    font-family: FuturaDemiC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    border-color: transparent;
+
+    &_text {
+      display: none;
+      visibility: hidden;
       margin-right: 5px;
     }
   }

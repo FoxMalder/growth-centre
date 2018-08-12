@@ -1,0 +1,10 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  transition: all .3s ease;
+
+  &-loupe {
+    @include size(16px);
+    background-image: resolve('assets/images/icon-loupe.png');
+  }
+}
