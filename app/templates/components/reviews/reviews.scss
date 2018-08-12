@@ -8,22 +8,23 @@
     padding-bottom: 40px;
     width: 100%;
   }
-
-  &_item {
-    width: 895px;
-    margin: 0 auto;
-  }
-
   &_box {
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
+    width: 895px;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   &_author {
     margin-bottom: 35px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 
     &_photo {
       margin-bottom: 30px;
