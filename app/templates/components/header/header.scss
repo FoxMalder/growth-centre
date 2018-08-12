@@ -8,6 +8,15 @@
 
   &-nav {
     background-color: #1c1024;
+    transition: all .3s ease;
+
+    &.is-fixed {
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
   }
 }
 

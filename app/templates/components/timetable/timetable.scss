@@ -1,16 +1,20 @@
 .timetable {
   background-color: #fff;
   padding-top: 50px;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   &-list {
     padding-top: 50px;
-    padding-bottom: 50px;
+    align-items: stretch;
+    align-content: stretch;
   }
 
   &_box {
     display: flex;
     flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
   }
 
   &_head {
@@ -34,7 +38,7 @@
 
   &_body {
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 0;
   }
 
   &_name {

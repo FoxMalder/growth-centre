@@ -4,7 +4,12 @@
   <div class="container">
     <!-- begin .breadcrumbs-list -->
     <ul class="breadcrumbs-list">
-      <li class="breadcrumbs-item"><a href="" class="breadcrumbs-link"></a></li>
+      <li class="breadcrumbs-item"><a href="/" class="breadcrumbs-link">Главная</a></li>
+      <li class="breadcrumbs-item devider"><span class="arrow">&rarr;</span></li>
+      {% for i in breadcrumbs %}
+        <li class="breadcrumbs-item"><a href="{{i.link}}" class="breadcrumbs-link">{{i.name}}</a></li>
+        {% if i.devider %}<li class="breadcrumbs-item devider"><span class="arrow">&rarr;</span></li>{% endif %}
+      {% endfor %}
     </ul>
     <!-- end .breadcrumbs-list -->
   </div>
