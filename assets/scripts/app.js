@@ -50,3 +50,21 @@ $(document).ready(function () {
     }
   });
 });
+"use strict";
+
+$(".reviews-list").slick({
+  dots: false,
+  pauseOnHover: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 280
+});
+"use strict";
+
+$(".sliders").slick({
+  dots: false,
+  pauseOnHover: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 280
+});
