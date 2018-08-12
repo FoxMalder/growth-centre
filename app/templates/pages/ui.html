@@ -14,163 +14,41 @@ breadcrumbs:
 {% block header %}
   {% include "components/header/header.html" %}
   <style>
-    body {
-      background-color: #633e7a;
-    }
-    .icon-page {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      background-color: #1c1024;
-    }
-    .demo-ico__item {
-      display: flex;
-      margin-bottom: 15px;
-      text-align: left;
-      align-items: center;
-    }
-    .demo-ico__item pre {
-      margin-bottom: 0;
-    }
-    .demo-ico__box {
-      margin-right: 15px;
-      flex-basis: 40px;
-      text-align: center;
-    }
-    .demo-ico__box {
-      fill: #fff;
-    }
-    .header {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-    .group {
-      margin-bottom: 25px;
-    }
-    .group p {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 200;
-      line-height: 30px;
-    }
-
-    .ui-page {
-      background-color: #fff;
-      padding: 42px 40px 22px 40px;
-      display: block;
-    }
-    .demo-ui {
-      margin-bottom: 15px;
-    }
-    .demo-ui .element {
-      margin-bottom: 5px;
-    }
-    .text-page {
-      background-color: #fff;
-      padding: 22px 40px 22px 40px;
-      display: block;
-    }
-
-    ul.list,
-    ol.list {
-      margin-bottom: 1em;
-      padding-left: 0;
-    }
-    ul.list li,
-    ol.list li {
-      margin-bottom: 0.5em;
-      line-height: 1.5;
-    }
-    ul.list li li,
-    ol.list li li {
-      margin-bottom: 0.5em;
-    }
-    ul.list {
-      list-style-type: none;
-    }
-    ul.list > li {
-      margin-left: 1em;
-      text-indent: -1.55em;
-      padding-left: 1.5em;
-    }
-    ul.list > li:before {
-      content: '\2014\a0\a0';
-    }
-    ul.list.list-short li {
-      margin: 0.1em 0 0.1em 0em;
-      color: #445365;
-    }
-    ul.list.list-short li:before {
-      display: none;
-      visibility: hidden;
-    }
-    ol.list > li {
-      margin-left: 2.5em;
-    }
-    li ul.list,
-    li ol.list {
-      margin: 0.3em 0 0.5em;
-      text-indent: 0;
-    }
-    code:not([class]),
-    tt:not([class]) {
-      background: #fff;
-      border: 1px solid #fafafa;
-      color: #cb3716;
-      border-radius: 3px;
-      padding: 2px 5px;
-      font-size: 0.85em;
-    }
-
-    h1, .h1 {
-      font-size: 33px;
-      line-height: 36px;
-      margin-top: 18px;
-      margin-bottom: 36px;
-      font-weight: 400;
-    }
-    h2, .h2 {
-      font-size: 25px;
-      line-height: 36px;
-      margin-top: 18px;
-      margin-bottom: 18px;
-      font-weight: 400;
-    }
-    h3, .h3 {
-      font-size: 19px;
-      line-height: 36px;
-      margin-top: 18px;
-      margin-bottom: 0px;
-      font-weight: 400;
-    }
-    h4, .h4 {
-      font-size: 14px;
-      line-height: 18px;
-      margin-top: 18px;
-      margin-bottom: 0px;
-      font-weight: 500;
-    }
-    h5, .h5 {
-      font-size: 14px;
-      line-height: 18px;
-      margin-top: 18px;
-      margin-bottom: 0px;
-      font-weight: 500;
-    }
-    sub, sup {
-      line-height: 0;
-      position: relative;
-      vertical-align: baseline;
-    }
-    sup {
-      top: -0.5em;
-    }
-    sub {
-      bottom: -0.25em;
-    }
-    p {
-      line-height: 22px;
-      margin-top: 0px;
-      margin-bottom: 18px;
-    }
+    body { background-color: #633e7a; }
+    .icon-page { padding-top: 50px; padding-bottom: 50px; background-color: #1c1024; }
+    .demo-ico__item { display: flex; margin-bottom: 15px; text-align: left; align-items: center; }
+    .demo-ico__item pre { margin-bottom: 0; }
+    .demo-ico__box { margin-right: 15px; flex-basis: 40px; text-align: center; }
+    .demo-ico__box { fill: #fff; }
+    .header { box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+    .group { margin-bottom: 25px; }
+    .group p { color: #fff; font-size: 16px; font-weight: 200; line-height: 30px; }
+    .ui-page { background-color: #fff; padding: 42px 40px 22px 40px; display: block; }
+    .demo-ui { margin-bottom: 15px; }
+    .demo-ui .element { margin-bottom: 5px; }
+    .text-page { background-color: #fff; padding: 22px 40px 22px 40px; display: block; }
+    .text-page ul.list, .text-page ol.list { margin-bottom: 1em; padding-left: 0; }
+    .text-page ul.list li,
+    .text-page ol.list li { margin-bottom: 0.5em; line-height: 1.5; }
+    .text-page ul.list li li,
+    .text-page ol.list li li { margin-bottom: 0.5em; }
+    .text-page ul.list { list-style-type: none; }
+    .text-page ul.list > li { margin-left: 1em; text-indent: -1.55em; padding-left: 1.5em; }
+    .text-page ul.list > li:before { content: '\2014\a0\a0'; }
+    .text-page ul.list.list-short li { margin: 0.1em 0 0.1em 0em; color: #445365; }
+    .text-page ul.list.list-short li:before { display: none; visibility: hidden; }
+    .text-page ol.list > li { margin-left: 2.5em; }
+    .text-page li ul.list, .text-page li ol.list { margin: 0.3em 0 0.5em; text-indent: 0; }
+    .text-page code:not([class]), .text-page tt:not([class]) { background: #fff; border: 1px solid #fafafa; color: #cb3716; border-radius: 3px; padding: 2px 5px; .text-page font-size: 0.85em; }
+    .text-page h1, .text-page .h1 { font-size: 33px; line-height: 36px; margin-top: 18px; margin-bottom: 36px; font-weight: 400; }
+    .text-page h2, .text-page .h2 { font-size: 25px; line-height: 36px; margin-top: 18px; margin-bottom: 18px; font-weight: 400; }
+    .text-page h3, .text-page .h3 { font-size: 19px; line-height: 36px; margin-top: 18px; margin-bottom: 0px; font-weight: 400; }
+    .text-page h4, .text-page .h4 { font-size: 14px; line-height: 18px; margin-top: 18px; margin-bottom: 0px; font-weight: 500; }
+    .text-page h5, .text-page .h5 { font-size: 14px; line-height: 18px; margin-top: 18px; margin-bottom: 0px; font-weight: 500; }
+    .text-page sub, .text-page sup { line-height: 0; position: relative; vertical-align: baseline; }
+    .text-page sup { top: -0.5em; }
+    .text-page sub { bottom: -0.25em; }
+    .text-page p { line-height: 22px; margin-top: 0px; margin-bottom: 18px; }
   </style>
 {% endblock %}
 
