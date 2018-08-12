@@ -10,7 +10,7 @@
 }
 
 .row {
-  box-sizing: border-box;
+  box-sizing: borderg44border-box-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,8 +23,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .row.reverse {
@@ -71,8 +71,8 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col-xs {
