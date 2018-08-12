@@ -146,3 +146,23 @@
     }
   }
 }
+
+.social-light {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+
+  &_item {
+    margin-right: 20px;
+
+    &:last-child { margin-right: 0; }
+  }
+
+  &_link {
+    border-bottom: 0;
+  }
+}
