@@ -3,7 +3,7 @@ files:
     - assets/**/*.scss
   ignore:
     - app/styles/_debug/**/*.scss
-    - app/styles/base/fonts.scss
+    - app/styles/fonts.scss
     - app/styles/helpers/normalize.scss
     - app/styles/helpers/mixins.scss
     - app/styles/helpers/flexboxgrid.scss

@@ -9,7 +9,7 @@
   height: 350px;
 
   &-item {
-    min-height: 350px;
+    min-height: 350px !important; /* sass-lint:disable-line no-important */
     background-image: linear-gradient(to top, rgba(215, 215, 215, .44) 0%, rgba(255, 255, 255, .44) 100%);
     overflow: hidden;
     position: relative;
