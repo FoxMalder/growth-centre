@@ -1,13 +1,15 @@
 .slider {
   background-color: #e9e9e9;
   position: relative;
+  height: 350px;
 }
 
 .sliders {
   width: 100%;
+  height: 350px;
 
   &-item {
-    height: 350px;
+    min-height: 350px !important;
     background-image: linear-gradient(to top, rgba(215, 215, 215, 0.44) 0%, rgba(255, 255, 255, 0.44) 100%);
     overflow: hidden;
     position: relative;
@@ -19,10 +21,6 @@
     &--1 {
       background-image: none;
       background-color: #1c1024;
-
-      .sliders-item_bg {
-        visibility: visible;
-      }
 
       .sliders-item_content {
         background-color: rgba(28, 16, 36, 0.72);
@@ -39,7 +37,6 @@
     }
 
     &_bg {
-      visibility: hidden;
       position: absolute;
       left: 0;
       top: 0;
