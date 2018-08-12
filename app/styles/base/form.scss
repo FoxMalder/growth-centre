@@ -27,3 +27,104 @@ input:placeholder {
 textarea {
   hyphens: auto;
 }
+
+
+.form-group,
+.form-actions {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--horisontal {
+    flex-direction: row;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(233, 239, 240);
+  border-radius: 2px;
+  padding: 13px 20px 14px 20px;
+  color: #9499a3;
+  font-family: 'FuturaBookC';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: .25s ease;
+
+  &:disabled,
+  &[readonly] {
+    color: rgb(173, 177, 185);
+    background-color: rgb(247, 247, 248);
+    border-color: rgb(214, 218, 221);
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    border: 1px solid rgb(215, 219, 223);
+  }
+
+  &:focus,
+  &.focus {
+    border: 1px solid rgb(255, 153, 0);
+  }
+
+  &.form-control--mini {
+    padding: 5px 10px 6px 10px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &-mini {
+    padding: 9px 19px 9px 19px;
+  }
+}
+
+textarea.form-control {
+  min-height: 150px;
+  max-height: 251px;
+  resize: vertical;
+}
+
+.subscribe {
+  margin-bottom: 20px;
+
+  .form-group {
+    position: relative;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 10px 90px 10px 0;
+  }
+
+  .button-go {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  	transform: translateY(-50%);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #1c1024;
+    font-family: FuturaDemiC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    border-color: transparent;
+
+    &_text {
+      margin-right: 5px;
+    }
+  }
+}
