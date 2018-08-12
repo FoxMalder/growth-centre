@@ -6,6 +6,13 @@
     padding-bottom: 27px;
   }
 
+  &_box  {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+
   &-nav {
     background-color: #1c1024;
     transition: all .3s ease;
@@ -17,6 +24,99 @@
       right: 0;
       width: 100%;
     }
+  }
+
+  &_address {
+    margin-top: 20px;
+    min-width: 260px;
+  }
+
+  &_contact {
+    margin-top: 20px;
+    text-align: right;
+    min-width: 260px;
+
+    .tel {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .contacts_email {
+      color: #fedf11;
+      font-weight: 400;
+    }
+  }
+
+  &_company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .contacts_address {
+    margin-top: 0;
+    text-align: left;
+
+    &_info {
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    &_time {
+      font-size: 16px;
+      color: #cbadd7;
+      justify-content: flex-start;
+    }
+  }
+
+  .logo {
+    border-bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &-img {
+      margin-bottom: 12px;
+
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    &-name {
+      color: #fff;
+      font-family: 'FuturaDemiC';
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+  }
+
+  .company-info {
+    color: #cbadd7;
+    font-family: 'FuturaBookC';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .mini-title {
+    color: #cbadd7;
+    font-family: 'FuturaBookC';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
   }
 }
 

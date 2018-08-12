@@ -48,7 +48,7 @@ button:disabled,
   background-color: #fedf11;
   border: 1px solid #fedf11;
   border-radius: 5px;
-  padding: 15px 35px 15px 35px;
+  padding: 15px 35px 14px 35px;
   color: #1c1024;
   font-family: 'FuturaDemiC';
   font-size: 15px;
@@ -62,6 +62,12 @@ button:disabled,
   position: relative;
   transition: all .3s ease;
   /* overflow: hidden; */
+
+  &:hover {
+    background-color: darken(#fedf11, 10%);
+    border-color: darken(#fedf11, 10%);
+    color: #1c1024;
+  }
 
   &-outline {
     background-color: transparent;
