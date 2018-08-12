@@ -9,8 +9,8 @@
   height: 350px;
 
   &-item {
-    min-height: 350px !important;
-    background-image: linear-gradient(to top, rgba(215, 215, 215, 0.44) 0%, rgba(255, 255, 255, 0.44) 100%);
+    min-height: 350px;
+    background-image: linear-gradient(to top, rgba(215, 215, 215, .44) 0%, rgba(255, 255, 255, .44) 100%);
     overflow: hidden;
     position: relative;
 
@@ -29,7 +29,6 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
-      z-index: 0;
     }
 
     &_photo {
@@ -130,7 +129,7 @@
       background-color: #1c1024;
 
       .sliders-item_content {
-        background-color: rgba(28, 16, 36, 0.72);
+        background-color: rgba(28, 16, 36, .72);
         height: 350px;
       }
 
@@ -149,7 +148,7 @@
 
     &.slick-prev {
       top: 50%;
-    	transform: translateY(-50%);
+      transform: translateY(-50%);
       left: 170px;
       right: auto;
       width: 50px;
@@ -178,7 +177,7 @@
 
     &.slick-next {
       top: 50%;
-    	transform: translateY(-50%);
+      transform: translateY(-50%);
       right: 170px;
       left: auto;
       width: 50px;
