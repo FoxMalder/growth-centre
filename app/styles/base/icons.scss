@@ -5,11 +5,11 @@
 
   &-loupe {
     @include size(16px);
-    background-image: resolve('assets/images/icon-loupe.png');
+    background-image: inline('./assets/images/icon-loupe.png');
   }
 
   &-watch {
     @include size(20px);
-    background-image: resolve('assets/images/watch.png');
+    background-image: inline('./assets/images/watch.png');
   }
 }
