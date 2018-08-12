@@ -45,16 +45,30 @@
     font-style: italic;
     line-height: 24px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -8px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translateX(-50%);
+      right: 0;
+      border-bottom: 1px solid #ccced4;
+      height: 1px;
+      width: calc( 100% - 20px );
+    }
   }
 
   &_experience {
-    text-align: center;
     padding: 5px 20px 0 20px;
     color: #9499a3;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    border-top: 1px solid #ccced4;
+    position: relative;
+    text-align: center;
   }
 }
