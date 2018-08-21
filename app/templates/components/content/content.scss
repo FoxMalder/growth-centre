@@ -1,9 +1,29 @@
 .content-page {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #fff;
+
+  @media #{$lg} {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .page-timetable {
   padding-top: 35px;
+}
+
+.progress-page {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #fff;
+
+  @media #{$lg} {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

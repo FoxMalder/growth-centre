@@ -2,15 +2,29 @@
 
   &_wrap {
     background-color: #633e7a;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media #{$lg} {
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
   }
 
-  &_box  {
+  &_box {
     display: flex;
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    @media #{$lg} {
+      flex-direction: row;
+      align-items: stretch;
+      align-content: stretch;
+      justify-content: space-between;
+    }
   }
 
   &-nav {
@@ -27,12 +41,17 @@
   }
 
   &_address {
-    margin-top: 20px;
-    min-width: 260px;
     display: flex;
     align-items: stretch;
     align-content: stretch;
     flex-direction: column;
+    margin-bottom: 20px;
+
+    @media #{$lg} {
+      margin-bottom: 0;
+      margin-top: 20px;
+      min-width: 260px;
+    }
 
     .search {
       margin-top: auto;
@@ -42,8 +61,11 @@
 
   &_contact {
     margin-top: 20px;
-    text-align: right;
-    min-width: 260px;
+
+    @media #{$lg} {
+      min-width: 260px;
+      text-align: right;
+    }
 
     .tel {
       color: #fff;
@@ -62,9 +84,12 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
     text-align: center;
+
+    @media #{$lg} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .contacts_address {
@@ -163,7 +188,10 @@
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: flex-end;
+
+  @media #{$lg} {
+    justify-content: flex-end;
+  }
 
   &_item {
     margin-right: 20px;
