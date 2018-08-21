@@ -4,8 +4,17 @@
   // &_wrap { }
 
   &_company {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media #{$lg} {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   &_logo {
@@ -14,14 +23,23 @@
 
   &_copyright {
     background-color: #1c1024;
-    padding-top: 26px;
-    padding-bottom: 46px;
     text-align: center;
     display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: center;
     align-content: center;
     flex-direction: column;
     justify-content: center;
+
+    @media #{$lg} {
+      padding-top: 26px;
+      padding-bottom: 46px;
+      padding-right: 0;
+      padding-left: 0;
+    }
 
     p {
       color: #cbadd7;
@@ -34,7 +52,11 @@
   }
 
   &_contacts {
-    text-align: right;
+    text-align: left;
+
+    @media #{$lg} {
+      text-align: right;
+    }
 
     .footer-menu-header {
       margin-bottom: 20px;
@@ -42,12 +64,18 @@
   }
 
   &_social {
-    padding-left: 10px;
-    text-align: right;
+    margin-top: 30px;
+    text-align: left;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    @media #{$lg} {
+      margin-top: 0;
+      text-align: right;
+      padding-left: 10px;
+      justify-content: space-between;
+    }
 
     .footer-menu-header {
       margin-bottom: 20px;
@@ -55,7 +83,10 @@
 
     .social-box {
       display: flex;
-      justify-content: flex-end;
+
+      @media #{$lg} {
+        justify-content: flex-end;
+      }
     }
   }
 }
@@ -68,14 +99,24 @@
 
 .floating-controls {
   position: fixed;
-  right: 78px;
-  bottom: 78px;
+  right: 28px;
+  bottom: 28px;
+
+  @media #{$lg} {
+    right: 78px;
+    bottom: 78px;
+  }
 }
 
 .footer-menu {
   list-style: none;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+
+  @media #{$lg} {
+    margin-bottom: 0;
+  }
 
   &_item {
     margin-bottom: 10px;
@@ -147,7 +188,10 @@
     font-family: 'FuturaDemiC';
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 10px;
+
+    @media #{$lg} {
+      margin-bottom: 10px;
+    }
   }
 
   &_time {
@@ -162,7 +206,10 @@
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: flex-end;
+
+  @media #{$lg} {
+    justify-content: flex-end;
+  }
 
   &_icon {
     margin-right: 8px;
