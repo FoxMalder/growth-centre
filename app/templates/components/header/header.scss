@@ -30,6 +30,7 @@
   &-nav {
     background-color: #1c1024;
     transition: all .3s ease;
+    height: 54px;
 
     &.is-fixed {
       z-index: 10;
@@ -37,6 +38,11 @@
       left: 0;
       right: 0;
       width: 100%;
+    }
+
+    &_box {
+      position: relative;
+      height: 100%;
     }
   }
 
@@ -163,10 +169,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 55px;
-  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
 
   @media #{$lg} {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
     padding-right: 0;
     padding-left: 0;
     align-items: center;
@@ -213,5 +223,105 @@
 
   &_link {
     border-bottom: 0;
+  }
+}
+
+.header-nav-mobile {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media #{$lg} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &-title {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-family: 'FuturaDemiC';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 20px 2px;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 0;
+    text-decoration: none;
+
+    @media #{$lg} {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  width: 40px;
+  height: 28px;
+  flex-direction: column;
+  transition: .3s ease;
+  position: relative;
+  justify-content: space-between;
+
+  &-wrap {
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    transition: all .3s ease;
+
+    &:hover {
+
+      .hamburger_i {
+        background-color: #fedf11;
+      }
+    }
+
+    &.is-active {
+
+      .hamburger {
+
+        .hamburger_i {
+          animation: pulse 1.8s tocross;
+          background-color: #633e7a;
+
+          &:nth-child(1) {
+            transform: translate(0px, 12px) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            background-color: #633e7a;
+            opacity: 0;
+            transform: translate(0px, 0px);
+          }
+
+          &:nth-child(3) {
+            transform: translate(0px, -12px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  &_i {
+    background-color: #633e7a;
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
+    transition: all .3s linear;
+    position: relative;
   }
 }
