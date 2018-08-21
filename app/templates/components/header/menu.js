@@ -13,3 +13,21 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function() {
+
+  $('._nav-hamburger').click(function(e) {
+    $(this).toggleClass("is-active");
+    $('.header-nav-mobile-title').toggleClass("is-active");
+    $('.header-nav_box').toggleClass("is-active");
+    $('.menu').toggleClass('is-active');
+  });
+
+  $('.header-nav-mobile-title').click(function() {
+    $(this).toggleClass("is-active");
+    $('._nav-hamburger').toggleClass("is-active");
+    $('.header-nav_box').toggleClass("is-active");
+    $('.menu').toggleClass('is-active');
+  });
+
+});
