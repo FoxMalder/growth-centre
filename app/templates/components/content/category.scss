@@ -35,9 +35,12 @@
 
     img {
       display: block;
-      min-height: 240px;
       // background-color: #1c1024;
       vertical-align: middle;
+
+      @media #{$lg} {
+        min-height: 240px;
+      }
     }
   }
 
