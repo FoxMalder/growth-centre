@@ -161,8 +161,8 @@
 }
 
 .rocket-up {
-  width: 78px;
-  height: 78px;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
   border: 5px solid #633e7a;
   color: #633e7a;
@@ -176,6 +176,11 @@
   &:hover {
     border: 5px solid darken(#633e7a, 15%);
     color: darken(#633e7a, 15%);
+  }
+
+  @media #{$lg} {
+    width: 78px;
+    height: 78px;
   }
 }
 
