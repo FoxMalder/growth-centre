@@ -16,9 +16,13 @@
     align-items: center;
     align-content: center;
     flex-direction: column;
-    width: 895px;
-    margin: 0 auto;
     justify-content: center;
+    width: 100%;
+
+    @media #{$lg} {
+      width: 895px;
+      margin: 0 auto;
+    }
   }
 
   &_author {

@@ -40,6 +40,6 @@ $selection-color:         #fff;
 
 $placeholder-color:       #9499a3;
 
-$sm: "only screen and (min-width: 48em)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
 $md: "only screen and (min-width: 64em)";
 $lg: "only screen and (min-width: 75em)";
