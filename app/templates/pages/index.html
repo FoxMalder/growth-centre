@@ -33,6 +33,13 @@ breadcrumbs:
     .progress-page .progress progress, .progress-page .progress .progress_value { display: inline-block; }
     .progress-page .progress_value { margin-left: 8px; }
     .progress-page .progress-time { color: #b6b6b6; pointer-events: none; font-size: 12px; }
+
+    @media only screen and (min-width : 100px) and (max-width : 999px){
+      .progress-page .progress-time,
+      .progress-page .progress-design,
+      .progress-page .progress-html,
+      .progress-page .navigation-name-hide { display: none; overflow: hidden; }
+    }
   </style>
 {% endblock %}
 
@@ -48,9 +55,9 @@ breadcrumbs:
       <ul class="navigation">
         <li class="navigation__header">
           <div class="progress navigation-name">Карта сайта</div>
-          <div class="progress navigation-name">Дизайн</div>
-          <div class="progress navigation-name">Вёрстка</div>
-          <div class="progress navigation-name">Время</div>
+          <div class="progress navigation-name navigation-name-hide">Дизайн</div>
+          <div class="progress navigation-name navigation-name-hide">Вёрстка</div>
+          <div class="progress navigation-name navigation-name-hide">Время</div>
         </li>
         <li class="navigation__item">
           <div class="progress progress-link">
